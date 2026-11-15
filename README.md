@@ -7,11 +7,15 @@ Trabalho 02 de Sistemas Operacionais. Jogo da memória por turnos para 2 jogador
     npm install
     npm start
 
-Ou abrir o `memoria-pokemon.exe`. O servidor tenta usar a porta 3000 e, se ela estiver ocupada, usa a próxima livre automaticamente. Depois abra o endereço que aparecer no console (normalmente `http://localhost:3000` ou `http://localhost:3001`) em duas abas, uma para cada jogador. Em outro computador da mesma rede, usar o IP que aparece no console.
+Ou abrir o `memoria-pokemon.exe` (precisa do Node.js instalado). O servidor tenta usar a porta 3000 e, se ela estiver ocupada, usa a próxima livre automaticamente. Depois abra o endereço que aparecer no console (normalmente `http://localhost:3000` ou `http://localhost:3001`) em duas abas, uma para cada jogador. Em outro computador da mesma rede, usar o IP que aparece no console.
 
 As imagens vêm do repositório de sprites da PokeAPI, sem internet aparece só o nome.
 
-Gerar o exe: `npx @yao-pkg/pkg .`
+Gerar o exe (abre o servidor com o Node.js do computador, sem instalar nada para compilar):
+
+    C:WindowsMicrosoft.NETFramework644.0.30319c.exe /out:memoria-pokemon.exe launcherMemoriaPokemon.cs
+
+Versão que já leva o Node junto (cerca de 57 MB): `npx @yao-pkg/pkg .`
 
 ## Regras
 
