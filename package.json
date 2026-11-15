@@ -1,0 +1,19 @@
+{
+  "name": "memoria-pokemon",
+  "version": "1.0.0",
+  "description": "Jogo da memoria Pokemon para 2 jogadores com troca de mensagens (WebSocket), memoria compartilhada (SharedArrayBuffer) e exclusao mutua (Atomics)",
+  "main": "server.js",
+  "bin": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "pkg": {
+    "scripts": ["src/*.js"],
+    "assets": ["public/**/*"],
+    "targets": ["node22-win-x64"],
+    "outputPath": "dist"
+  }
+}
