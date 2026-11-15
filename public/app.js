@@ -82,7 +82,7 @@ function registrar(seta, m) {
   while ($('log').children.length > 80) $('log').lastChild.remove();
 }
 
-const ws = new WebSocket('ws://' + location.host);
+const ws = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host);
 
 ws.onmessage = (e) => receber(String(e.data));
 ws.onclose = () => {
