@@ -13,7 +13,7 @@ As imagens vêm do repositório de sprites da PokeAPI, sem internet aparece só 
 
 Gerar o exe (abre o servidor com o Node.js do computador, sem instalar nada para compilar):
 
-    C:WindowsMicrosoft.NETFramework644.0.30319c.exe /out:memoria-pokemon.exe launcherMemoriaPokemon.cs
+    C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /out:memoria-pokemon.exe launcher\MemoriaPokemon.cs
 
 Versão que já leva o Node junto (cerca de 57 MB): `npx @yao-pkg/pkg .`
 
